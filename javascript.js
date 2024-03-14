@@ -1,6 +1,6 @@
-const submitButton = document.querySelector('#submit-button');
-
-// Change button text to "Processing..." when clicked
-submitButton.addEventListener('click', function() {
-    submitButton.textContent = 'Processing...';
-});
+onload = () => {
+    const c = setTimeout(() => {
+      document.body.classList.remove("not-loaded");
+      clearTimeout(c);
+    }, 1000);
+  };
